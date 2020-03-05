@@ -11,13 +11,15 @@
     <!--    normalize.css v8.0.1    -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <!--    fontawesome v5  -->
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/db148ba7a4.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"
+          type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <!--    style.css v1.0.0    -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
-    <nav>
+    <nav class="container">
         <ul>
             <li class="hover-gray"><a href="#"><i class="fas fa-home"></i></a></li>
             <li class="hover-gray"><a href="#">Actualités</a></li>
@@ -38,7 +40,7 @@
     </nav>
 </header>
 
-<main role="main">
+<main role="main" class="container">
     <section class="row" id="header-section">
         <div id="logo-box">
             <a href="https://www.lapresse.ca/" target="_blank">
@@ -48,32 +50,36 @@
         <div class="column box">
             <div class="row flex-1">
                 <div id="current-date"><span>Lundi 2 Mars 2020</span></div>
-                <div id="meteo"><div id="temperature"><i class="fas fa-cloud-meatball color-text-gray"></i> <span class="color-text-gray">1&#8451;</span></div> <div id="region" class="color-text-gray">Montréal</div></div>
+                <div id="meteo">
+                    <div id="temperature"><i class="fas fa-cloud-meatball color-text-gray"></i> <span
+                            class="color-text-gray">1&#8451;</span></div>
+                    <div class="color-text-gray" id="region">Montréal</div>
+                </div>
                 <div id="search"><i class="fas fa-search"></i></div>
                 <div id="je-soutiens"><span>Je soutiens La Presse</span></div>
             </div>
             <div class="divider"></div>
             <div class="row flex-1">
                 <div class="person-box row flex-1">
-                    <div class="person-logo flex-1"><img src="images/person_1.png" alt="person1"></div>
+                    <div class="person-logo flex-1"><img alt="person1" src="images/person_1.png"></div>
                     <div class="person-description flex-1">
                         Le faucon Legault
                     </div>
                 </div>
                 <div class="person-box row flex-1">
-                    <div class="person-logo flex-1"><img src="images/person_2.png" alt="person2"></div>
+                    <div class="person-logo flex-1"><img alt="person2" src="images/person_2.png"></div>
                     <div class="person-description flex-1">
                         L'art subtil du 0-0
                     </div>
                 </div>
                 <div class="person-box row flex-1">
-                    <div class="person-logo flex-1"><img src="images/person_3.png" alt="person3"></div>
+                    <div class="person-logo flex-1"><img alt="person3" src="images/person_3.png"></div>
                     <div class="person-description flex-1">
                         Toute la vie pour toutes les pensionnaires
                     </div>
                 </div>
                 <div class="person-box row flex-1">
-                    <div class="person-logo flex-1"><img src="images/person_4.png" alt="person4"></div>
+                    <div class="person-logo flex-1"><img alt="person4" src="images/person_4.png"></div>
                     <div class="person-description flex-1">
                         Non, mais quel gâchis !
                     </div>
@@ -82,9 +88,73 @@
         </div>
     </section>
     <section>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, autem debitis delectus doloribus eos facere, illo laboriosam magni minus necessitatibus nulla qui quidem quis quisquam repellat suscipit voluptatibus voluptatum.</span><span>Accusamus animi autem doloremque eligendi obcaecati perferendis quas, quia quis voluptas voluptatum! Ducimus eaque omnis praesentium? Commodi culpa dolore doloribus dolorum fugit incidunt, inventore modi neque possimus, rem soluta unde?</span></p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, autem debitis delectus doloribus eos facere, illo laboriosam magni minus necessitatibus nulla qui quidem quis quisquam repellat suscipit voluptatibus voluptatum.</span><span>Accusamus animi autem doloremque eligendi obcaecati perferendis quas, quia quis voluptas voluptatum! Ducimus eaque omnis praesentium? Commodi culpa dolore doloribus dolorum fugit incidunt, inventore modi neque possimus, rem soluta unde?</span>
+        </p>
     </section>
 </main>
+
+<aside></aside>
+
+<footer>
+    <section id="footer-infos">
+        <div class="footer-infos-box container row">
+            <div class="flex-1">
+                <a href="https://www.lapresse.ca/" target="_blank">
+                    <img alt="logo de lapresse" id="footer-img-logo-lapresse" src="images/footer_logo_lapresse.png">
+                </a>
+                <ul>
+                    <li><a href="#">Nous joindre</a></li>
+                    <li><a href="#">À propos de nous</a></li>
+                    <li><a href="#">Faites carrière chez nous</a></li>
+                    <li><a href="#">Annoncez dans nos médias</a></li>
+                </ul>
+            </div>
+            <div class="row flex-2">
+                <div id="footer-suivez-nous" class="flex-1 footer-padding-box">
+                    <div class="footer-subtitle">Suivez-Nous</div>
+                    <div class="social-box row">
+                        <div class="social social-facebook">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social social-twitter">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="social social-faq">
+                            <a href="#"><i class="fas fa-wifi"></i></a>
+                        </div>
+
+                    </div>
+                    <ul class="no-uppercase">
+                        <li><a href="#">La Presse+</a></li>
+                        <li><a href="#">Application mobile La Presse</a></li>
+                    </ul>
+                </div>
+                <div id="footer-services" class="flex-1 left-divider footer-padding-box">
+                    <div class="footer-subtitle">Services</div>
+                    <ul class="no-uppercase">
+                        <li><a href="#">Avis de décès</a></li>
+                        <li><a href="#">Concours</a></li>
+                        <li><a href="#">Détente</a></li>
+                        <li><a href="#">Éditions La Presse</a></li>
+                    </ul>
+                </div>
+                <div id="footer-archives" class="flex-1 left-divider footer-padding-box">
+                    <div class="footer-subtitle">Archives</div>
+                    <ul class="no-uppercase">
+                        <li><a href="#">Recherche</a></li>
+                        <li><a href="#">Archives payantes</a></li>
+                        <li><a href="#">Achat d'une page d'histoire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-copy">
+        <div class="footer-copy-box container">
+
+        </div>
+    </section>
+</footer>
 
 </body>
 </html>

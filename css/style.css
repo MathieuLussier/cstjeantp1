@@ -22,10 +22,6 @@ body {
     line-height: 1.6;
 }
 
-nav ul {
-    list-style: none;
-}
-
 header {
     background-color: #232325;
     position: fixed;
@@ -36,9 +32,7 @@ header {
 }
 
 nav {
-    width: 994px;
     height: 50px;
-    margin: 0 auto;
 }
 
 nav ul {
@@ -47,6 +41,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    list-style: none;
 }
 
 nav ul li {
@@ -59,7 +54,7 @@ nav ul li a {
     display: block;
     text-decoration: none;
     text-align: center;
-    font-size: .7rem;
+    font-size: .75rem;
     text-transform: uppercase;
     color: #fff;
     padding: 10px;
@@ -112,9 +107,17 @@ nav ul li a {
     color: #767676;
 }
 
-main {
+.no-uppercase li a {
+    text-transform: none !important;
+}
+
+.container {
     width: 994px;
-    margin: 50px auto 0;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 50px !important;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -155,6 +158,10 @@ section {
     border-style: solid;
     border-width: 1px;
     border-color: #ebebeb;
+}
+
+.left-divider {
+    border-left: 2px solid #232325;
 }
 
 #header-section {
@@ -216,13 +223,12 @@ section {
     display: flex;
 }
 
-#search > i {
+#search > svg, #search > i {
     margin: auto 0 auto auto;
 }
-#search > i:hover {
+#search > svg:hover, #search > i:hover {
     cursor: pointer;
 }
-
 
 #je-soutiens {
     flex: 2;
@@ -247,22 +253,114 @@ section {
     background-color: rgba(255, 229, 1, 0.5);
 }
 
-.person-box {
-
-}
-
-.person-box > .person-logo {
-
-}
-
-.person-box > .person-logo > img {
-
-}
-
 .person-box > .person-description {
     padding-top: 15px;
     font-size: .8rem;
     font-weight: normal;
     line-height: 1;
     color: #333;
+}
+
+.social-box {
+    margin: 2rem 0;
+}
+
+.social {
+    border-radius: 50%;
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+}
+
+.social:hover {
+    background-color: #C8C8D2;
+}
+
+.social a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.social a svg {
+    margin: auto;
+}
+
+.social-facebook a {
+    color: #374284;
+}
+
+.social-twitter, .social-faq {
+    margin-left: 10px;
+}
+
+.social-twitter a {
+    color: #1683ab;
+}
+
+.social-faq a {
+    color: #db5c00;
+}
+
+.social-faq a svg {
+    transform: rotate(45deg);
+}
+
+footer {
+    margin-top: 50px !important;
+}
+
+footer > section {
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+#footer-infos {
+    background-color: #1A1A1C;
+    padding: 2.5rem 0;
+}
+
+#footer-infos-box {
+
+}
+
+#footer-img-logo-lapresse {
+    width: 108px;
+    height: 108px;
+    margin-bottom: 1.8rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: .3rem 0;
+}
+
+footer ul li a {
+    font-size: .8rem;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer ul li a:hover {
+    color: #C8C8D2;
+}
+
+.footer-padding-box {
+    padding: 0 0 5rem 2rem;
+}
+
+.footer-subtitle {
+    color: #FFF;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#footer-copy {
+    height: 100px;
+    background-color: #303033;
 }
