@@ -15,6 +15,8 @@ html {
 html, body {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 body {
@@ -117,9 +119,10 @@ nav ul li a {
 }
 
 main {
-    margin-top: 50px !important;
-    padding: 1rem;
     display: flex;
+    position: relative;
+    padding: 1rem;
+    margin-top: 50px !important;
     flex-direction: column;
 }
 
@@ -307,7 +310,10 @@ section {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     margin-top: 50px !important;
+    width: 100%;
 }
 
 footer > section {
@@ -318,10 +324,6 @@ footer > section {
 #footer-infos {
     background-color: #1A1A1C;
     padding: 2.5rem 0;
-}
-
-#footer-infos-box {
-
 }
 
 #footer-img-logo-lapresse {
@@ -361,6 +363,31 @@ footer ul li a:hover {
 }
 
 #footer-copy {
-    height: 100px;
     background-color: #303033;
+}
+
+.footer-right-divider {
+    border-right: 1px solid #FFF;
+    margin-right: 1rem;
+}
+
+#footer-copy-box {
+    color: #FFF;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#footer-copy-box ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+#footer-copy-box ul li {
+    padding-right: 1rem;
+    line-height: 1;
+}
+
+#footer-copyright {
+    font-size: .8rem;
 }
