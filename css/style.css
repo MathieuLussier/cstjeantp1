@@ -125,7 +125,7 @@ main {
     flex-direction: column;
 }
 
-section {
+main > div {
     margin-bottom: 30px;
     width: 100%;
 }
@@ -173,7 +173,21 @@ section {
 }
 
 #logo-box {
+    position: relative;
     margin-right: 20px;
+}
+
+#logo-box > a:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+}
+
+#logo-box > a:hover::after {
+    background-color: rgba(48, 48, 51, .1);
 }
 
 #img-logo-lapresse {
@@ -243,7 +257,7 @@ section {
     margin-left: 10px;
     color: #222222;
     white-space: nowrap;
-    padding: 8px 10px;
+    padding: 6px 6px;
 }
 
 #je-soutiens > span {
@@ -253,6 +267,54 @@ section {
 #je-soutiens:hover {
     cursor: pointer;
     background-color: rgba(255, 229, 1, 0.5);
+}
+
+.person-box {
+    cursor: pointer;
+    position: relative;
+}
+
+.person-logo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 86px;
+    height: 75px;
+    z-index: 1;
+    transition: .3s background-color;
+}
+
+.person-hover-1:hover .person-description {
+    color: #666;
+}
+
+.person-hover-1:hover .person-logo:after {
+    background-color: rgba(102, 102, 102, 0.3);
+}
+
+.person-hover-2:hover .person-description {
+    color: #F09114;
+}
+
+.person-hover-2:hover .person-logo:after {
+    background-color: rgba(255, 175, 0, 0.3);
+}
+
+.person-hover-3:hover .person-description {
+    color: #00A5BB;
+}
+
+.person-hover-3:hover .person-logo:after {
+    background-color: rgba(0, 165, 187, 0.3);
+}
+
+.person-hover-4:hover .person-description {
+    color: #016A7C;
+}
+
+.person-hover-4:hover .person-logo:after {
+    background-color: rgba(51, 51, 51, 0.3);
 }
 
 .person-box > .person-description {
@@ -315,7 +377,7 @@ footer {
     width: 100%;
 }
 
-footer > section {
+footer > div {
     padding: 1rem;
     margin-bottom: 0;
 }
