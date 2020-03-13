@@ -372,6 +372,7 @@ main > div, aside > div {
     padding: 0 1rem;
     height: 100%;
 }
+
 #search > svg:hover, #search > i:hover {
     cursor: pointer;
 }
@@ -657,7 +658,6 @@ main > div, aside > div {
 .very-small-article .small-article-title {
     font-size: .9rem;
 }
-
 
 .small-article-text {
     color: #767676;
