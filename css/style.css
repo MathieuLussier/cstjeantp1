@@ -249,6 +249,8 @@ nav ul li a {
 .absolute-link {
     display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     text-decoration: none;
     height: 100%;
     width: 100%;
