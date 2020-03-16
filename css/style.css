@@ -246,6 +246,15 @@ nav ul li a {
     background-color: #CBCBCB;
 }
 
+.absolute-link {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
 /*******************************************************************
 *                   CONTENT SECTION                                *
 ********************************************************************/
@@ -322,6 +331,7 @@ main > div, aside > div {
 }
 
 #meteo {
+    position: relative;
     flex: 2;
     margin-right: 10px;
     display: flex;
@@ -386,6 +396,7 @@ main > div, aside > div {
 }
 
 #je-soutiens {
+    position: relative;
     flex: 1;
     display: flex;
     background-color: #ffE501;
@@ -439,6 +450,10 @@ main > div, aside > div {
     height: 75px;
     width: 113px;
     left: -19px;
+}
+
+.person-description {
+    color: #8c8c8c;
 }
 
 .person-hover-1:hover .person-description {
@@ -753,10 +768,6 @@ footer > div {
 
 footer ul {
     list-style: none;
-}
-
-footer ul li {
-    margin: .3rem 0;
 }
 
 footer ul li a {
